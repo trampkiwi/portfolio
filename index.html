@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Hello. - Kiwi</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*@font-face {
+                font-family: 'lunchds';
+                src: url('fonts/lunchds.woff') format('woff'),
+                url('fonts/lunchds.ttf') format('truetype');
+            }  */
+
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: "Courier New", Courier, monospace;
+                
+                height: 100vh;
+                width: 100vw;
+                display: table;
+                text-align: center;
+
+                background: url('images/background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: #ffffff;
+            }
+
+            #dialogue {
+                font-size: 1.4em;
+
+                display: none;
+                
+                text-align: center;
+                vertical-align: middle;
+                line-height: normal;
+            }
+
+            #content, #choices {
+                line-height: 1.4;
+            }
+
+            a {
+                color: #d3ff99;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src="animateTyping.js?v=6"></script>
+        <script src="index.js?v=21"></script>
+
+        <div id="dialogue">
+            <span id="content"></span><br><br>
+
+            <div id="choices">
+            </div>
+        </div>
+    </body>
+</html>

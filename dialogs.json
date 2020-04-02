@@ -1,0 +1,91 @@
+{
+    "dialogs" : [
+        {
+            "text" : "Welcome to Youngjun Lee's portfolio/repository.<br>What would you like to do?",
+            "response" : [
+                {
+                    "goto" : 1,
+                    "text" : "Go to Projects"
+                },
+                {
+                    "goto" : 2,
+                    "text" : "Go to Instagram"
+                },
+                {
+                    "goto" : 3,
+                    "text" : "I'd like to have a chat."
+                }
+            ]
+        },
+        {
+            "text" : "To go to the projects list, click <a href=\"projects.html\">here</a>.",
+            "response" : [
+                {
+                    "goto" : 0,
+                    "text" : "Go back to Default Page"
+                }
+            ]
+        },
+        {
+            "text" : "<a href=\"https://www.instagram.com/green_grey_yellow/\">@green_grey_yellow</a>",
+            "response" : [
+                {
+                    "goto" : 0,
+                    "text" : "Go back to Default Page"
+                }
+            ]
+        },
+        {
+            "text" : "What would you like to talk about?",
+            "response" : [
+                {
+                    "goto" : 4,
+                    "text" : "About this website"
+                },
+                {
+                    "goto" : 5,
+                    "text" : "About contacts"
+                },
+                {
+                    "goto" : 6,
+                    "text" : "Nothing in particular. What do you want to talk about?"
+                }
+            ]
+        },
+        {
+            "text" : "This website is running on AWS S3,<br>and all the code is purely front-end, made with libraries like JQuery.<br>If you have any questions, you can contact me.",
+            "response" : [
+                {
+                    "goto" : 5,
+                    "text" : "How can I contact you?"
+                },
+                {
+                    "goto" : 0,
+                    "text" : "I see. Please take me back to the default page."
+                }
+            ]
+        },
+        {
+            "text" : "If you can, please contact me via email at yjkiwilee@gmail.com.<br>Alternatively you can send me a message via Instagram,<br>but please only do so for informal enquiries.",
+            "response" : [
+                {
+                    "goto" : 2,
+                    "text" : "Where can I see your Instagram page?"
+                },
+                {
+                    "goto" : 0,
+                    "text" : "Right. Please take me back to the default page."
+                }
+            ]
+        },
+        {
+            "text" : "Me? Well, I can show you a video of David Bowie performing 'Imagine'<br>as a tribute to John Lennon.<br><a href=\"https://youtu.be/pSx3uT9cJ04?t=69\">Here</a>.",
+            "response" : [
+                {
+                    "goto" : 0,
+                    "text" : "Go back to Default Page"
+                }
+            ]
+        }
+    ]
+}
