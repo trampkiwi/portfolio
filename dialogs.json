@@ -1,11 +1,11 @@
 {
     "dialogs" : [
         {
-            "text" : "Welcome to Youngjun Lee's portfolio/repository.<br>What would you like to do?",
+            "text" : "Welcome to Youngjun Lee's corner.<br>What would you like to do?",
             "response" : [
                 {
                     "goto" : 1,
-                    "text" : "Go to Projects"
+                    "text" : "Go to Curiosities"
                 },
                 {
                     "goto" : 2,
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "text" : "To go to the projects list, click <a href=\"projects.html\">here</a>.",
+            "text" : "You can see them <a href=\"curiosities.html\">here</a>.",
             "response" : [
                 {
                     "goto" : 0,
@@ -40,7 +40,7 @@
             "response" : [
                 {
                     "goto" : 4,
-                    "text" : "About this website"
+                    "text" : "About the developer"
                 },
                 {
                     "goto" : 5,
@@ -53,7 +53,7 @@
             ]
         },
         {
-            "text" : "This website is running on AWS S3,<br>and all the code is purely front-end, made with libraries like JQuery.<br>If you have any questions, you can contact me.",
+            "text" : "Please see <a href=\"about.html\">here</a>.",
             "response" : [
                 {
                     "goto" : 5,
@@ -79,7 +79,7 @@
             ]
         },
         {
-            "text" : "Me? Well, I can show you a video of David Bowie performing 'Imagine'<br>as a tribute to John Lennon.<br><a href=\"https://youtu.be/pSx3uT9cJ04?t=69\">Here</a>.",
+            "text" : "<a href=\"https://youtu.be/pSx3uT9cJ04?t=69\">Here</a>'s something nice to listen to.",
             "response" : [
                 {
                     "goto" : 0,
