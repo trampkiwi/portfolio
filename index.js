@@ -20,7 +20,7 @@ $(function(){
         $('#content').on('typing:done', function() {
             $.each(dialogs[id].response, function(index, response) {
                 $('#choices').append('<a href="?id=' + response.goto + '">' + response.text + '</a>'
-                + (index < dialogs[id].response.length - 1 ? '<br>' : ''));
+                + (index < dialogs[id].response.length - 1 ? '<br><span style="font-size:0.5em;"> </span><br>' : ''));
             });
         })
 
