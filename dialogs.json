@@ -1,7 +1,7 @@
 {
     "dialogs" : [
         {
-            "text" : "Welcome to Youngjun Lee's corner.<br>What would you like to do?",
+            "text" : "Welcome to Youngjun Lee's corner in the world wide web.<br>What would you like to do?",
             "response" : [
                 {
                     "goto" : 1,

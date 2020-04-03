@@ -9,7 +9,7 @@ $(function(){
 
     id = parseInt(id);
 
-    $.getJSON('dialogs.json?v=25', function(data){
+    $.getJSON('dialogs.json?v=26', function(data){
         var dialogs = data.dialogs;
 
         $('#content').html('');
