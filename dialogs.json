@@ -40,11 +40,7 @@
             "response" : [
                 {
                     "goto" : 4,
-                    "text" : "About the developer"
-                },
-                {
-                    "goto" : 5,
-                    "text" : "About contacts"
+                    "text" : "About the developer & contact"
                 },
                 {
                     "goto" : 6,
