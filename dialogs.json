@@ -22,7 +22,7 @@
             "response" : [
                 {
                     "goto" : 0,
-                    "text" : "Go back to Default Page"
+                    "text" : "Go back"
                 }
             ]
         },
@@ -31,7 +31,7 @@
             "response" : [
                 {
                     "goto" : 0,
-                    "text" : "Go back to Default Page"
+                    "text" : "Go back"
                 }
             ]
         },
@@ -61,7 +61,7 @@
                 },
                 {
                     "goto" : 0,
-                    "text" : "I see. Please take me back to the default page."
+                    "text" : "Go back"
                 }
             ]
         },
@@ -74,7 +74,7 @@
                 },
                 {
                     "goto" : 0,
-                    "text" : "Right. Please take me back to the default page."
+                    "text" : "Go back"
                 }
             ]
         },
@@ -83,7 +83,7 @@
             "response" : [
                 {
                     "goto" : 0,
-                    "text" : "Go back to Default Page"
+                    "text" : "Go back"
                 }
             ]
         }
