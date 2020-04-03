@@ -15,7 +15,7 @@ $(function(){
         $('#content').html('');
         $('#choices').html('');
 
-        $('#content').typeHtml(dialogs[id].text, 50);
+        $('#content').typeHtml(dialogs[id].text, 30);
 
         $('#content').on('typing:done', function() {
             $.each(dialogs[id].response, function(index, response) {
