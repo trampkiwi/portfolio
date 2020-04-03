@@ -52,10 +52,6 @@
             "text" : "Please see <a href=\"about.html\">here</a>.",
             "response" : [
                 {
-                    "goto" : 5,
-                    "text" : "How can I contact you?"
-                },
-                {
                     "goto" : 0,
                     "text" : "Go back"
                 }
