@@ -26,7 +26,7 @@
 
             body { padding: 5vw; }
 
-            a { color: #fff; }
+            a { color: #d3ff99; }
 
             #goback {
                 display: inline-block;
@@ -35,6 +35,25 @@
             }
 
             span { background: rgba(0, 0, 0, 0.8); }
+
+            /* ------------------- */
+
+            .larg {
+                width: 40em;
+                max-width: 90vw;
+                height: auto;
+                max-height: 90vw;
+                overflow: hidden;
+            }
+
+            .larg .horiz {
+                width: 40em;
+                max-width: 90vw;
+            }
+
+            .descrip { font-size: 0.85em; }
+
+            .red { background: rgba(0, 0, 0, 0); color: #f00; }
         </style>
     </head>
     <body>
@@ -42,6 +61,25 @@
         <h2><span>"Virtual Wanderer"</span></h2>
         <p><span>
             In this 'curiosity', the concept of a '<i>virtual landscape</i>' is explored.
+        </span></p>
+        <p><span>
+            Jump to... <a href="#hist">History</a> <a href="#v1"><i>Landscape</i> v.1</a>
+        </span></p>
+        <h3 id="hist"><span>History</span></h3>
+        <p><span>
+            In early 2019, I began working on this project in hopes of creating
+            a 'true' virtual world, where not only <i>terrain</i> but also
+            <i>live weather</i>, <i>climate zone</i>, accurate <i>flora, fauna</i> and <i>timezone</i>
+            would be rendered based on a physical location.
+        </span></p>
+        <div class="larg"><img class="horiz" src="vwander/initial concept.jpg"></div>
+        <p class="descrip"><span>
+            <span class="red">1.</span> Timezone 
+            <span class="red">2.</span> Live weather
+            <span class="red">3.</span> Flora and fauna accurate to climate zone and season
+            <span class="red">4.</span> Terrain from DEM (rivers, lakes and oceans also to be rendered,
+            other terrain details may be considered)<br>
+            * <i>DEM</i>: Digital Elevation Model
         </span></p>
     </body>
 </html>
