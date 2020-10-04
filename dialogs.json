@@ -49,7 +49,7 @@
             ]
         },
         {
-            "text" : "Please see <a href=\"about.html\">here</a>.",
+            "text" : "Please see <a href=\"about.html\">this page</a>.",
             "response" : [
                 {
                     "goto" : 0,
