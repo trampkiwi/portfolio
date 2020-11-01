@@ -5,11 +5,11 @@
             "response" : [
                 {
                     "goto" : 1,
-                    "text" : "Go to Curiosities"
+                    "text" : "Go to Projects"
                 },
                 {
                     "goto" : 2,
-                    "text" : "Go to Instagram"
+                    "text" : "Go to About"
                 },
                 {
                     "goto" : 3,
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "text" : "You can see them <a href=\"curiosities.html\">here</a>.",
+            "text" : "<a href=\"projects.html\">Projects</a>.",
             "response" : [
                 {
                     "goto" : 0,
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "text" : "<a href=\"https://www.instagram.com/green_grey_yellow/\">@green_grey_yellow</a>",
+            "text" : "<a href=\"about.html\">About</a>",
             "response" : [
                 {
                     "goto" : 0,
@@ -40,38 +40,12 @@
             "response" : [
                 {
                     "goto" : 4,
-                    "text" : "About the developer & contact"
-                },
-                {
-                    "goto" : 6,
-                    "text" : "Nothing in particular. What do you want to talk about?"
+                    "text" : "Nothing in particular. Do you have anything interesting to share?"
                 }
             ]
         },
         {
-            "text" : "Please see <a href=\"about.html\">this page</a>.",
-            "response" : [
-                {
-                    "goto" : 0,
-                    "text" : "Go back"
-                }
-            ]
-        },
-        {
-            "text" : "If you can, please contact me via email at yjkiwilee@gmail.com.<br>Alternatively you can send me a message via Instagram,<br>but please only do so for informal enquiries.",
-            "response" : [
-                {
-                    "goto" : 2,
-                    "text" : "Where can I see your Instagram page?"
-                },
-                {
-                    "goto" : 0,
-                    "text" : "Go back"
-                }
-            ]
-        },
-        {
-            "text" : "<a href=\"https://youtu.be/pSx3uT9cJ04?t=69\">Here</a>'s something nice to listen to.",
+            "text" : "Would you like to go on <a href=\"https://youtu.be/DTba0bNEV14\"a snowy train ride</a>?",
             "response" : [
                 {
                     "goto" : 0,
