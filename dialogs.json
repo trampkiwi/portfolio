@@ -45,7 +45,7 @@
             ]
         },
         {
-            "text" : "Would you like to go on <a href=\"https://youtu.be/DTba0bNEV14\"a snowy train ride</a>?",
+            "text" : "Would you like to go on <a href=\"https://youtu.be/DTba0bNEV14\">a snowy train ride</a>?",
             "response" : [
                 {
                     "goto" : 0,
