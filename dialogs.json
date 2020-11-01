@@ -18,7 +18,7 @@
             ]
         },
         {
-            "text" : "<a href=\"projects.html\">Projects</a>.",
+            "text" : "<a href=\"projects.html\">Projects</a>",
             "response" : [
                 {
                     "goto" : 0,
