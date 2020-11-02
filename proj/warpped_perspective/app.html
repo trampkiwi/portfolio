@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: white;
+                text-align: center;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            a {
+                color: #d3ff99; 
+            }
+
+            #toolbanner a {
+                color: #537528;
+            }
+
+            #toolbanner a.selected {
+                color: #d3ff99;
+            }
+
+            #map {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                border: 2px solid white;
+                z-index: 10;
+                background-color: black;
+            }
+
+            #veil {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: 20;
+                line-height: 1.4;
+            }
+
+            #clickonscreen {
+                display: inline-block;
+                position: absolute;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -50%);
+                font-size: 1.5em;
+                color: white;
+            }
+
+            #toolbanner {
+                text-align: left;
+                position: absolute;
+                padding: 15px;
+                bottom: 0;
+                left: 0;
+                font-size: 1.2em;
+                background-color: black;
+            }
+
+            #goback {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 1.2em;
+                padding: 15px;
+                background-color: black;
+            }
+
+            #about {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 1.2em;
+                padding: 15px;
+                background-color: black;
+            }
+
+            #info {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color: white;
+                background-color: black;
+                font-size: 1.1em;
+                line-height: 1.3;
+                z-index: 30;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            #infocontent {
+                margin: 50px 100px 50px 100px;
+                width: calc(100vw - 200px);
+                height: calc(100vh - 100px);
+                overflow-y: scroll;
+                background-color: transparent;
+                text-align: left;
+            }
+
+            #exitinfo {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: 15px;
+                font-size: 3em;
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="suppMath.js"></script>
+        <script src="map.js"></script>
+        <script src="app.js"></script>
+        <script src="controls.js"></script>
+        <canvas id="cvs" width="1300" height="750"></canvas>
+        <canvas id="map" width="200" height="200"></canvas>
+        <div id="veil"><div id="clickonscreen">Click somewhere near the centre to begin control.<br>
+        Move the cursor to look around, and use WASD keys to move.<br>
+        Click again while in control to exit control.<br>
+        The 'map' at the top-left corner shows your position and the direction you are facing.<br>
+        Click on any of the perspectives at the bottom-left to change the type of perspective you are viewing the virtual space with.<br>
+        Click anywhere to begin.</div></div>
+        <a id="goback" href="/projects.html">Go back to Projects</a>
+        <div id="toolbanner">
+            <a href="#" id="normpersp" style="margin-right: 15px;">Normal perspective</a>
+            <a href="#" id="sinpersp" class="selected" style="margin-right: 15px;">'Wavy' perspective</a>
+            <a href="#" id="exppersp" style="margin-right: 15px;">Exponential perspective</a>
+            <a href="#" id="invpersp" style="margin-right: 15px;">Inverted perspective</a>
+        </div>
+        <a href="#" id="about">What is this?</a>
+        <div id="info" style="display: none;">
+            <div id="infocontent">
+                This project, called 'warpped perspective', explores how the world would look like
+                if our field of view had a different 'shape'.<br>
+                Far-away objects appear to be smaller because of our field of view 'widens' at further distances:<br>
+                <br>
+                <img src="normpersp.jpg" style="height: 20em;"><br>
+                <br>
+                That is, because far-away objects take up less of the entire 'plane of view' at that point,<br>
+                (i.e. the object only takes up a small portion of the cross-sectional area of the 'cone' representing the field of view at that distance)<br>
+                they appear to be smaller.<br>
+                With this idea in mind, what the other perspectives in this project mean are relatively simple to understand.<br>
+                The 'Wavy' perspective is where the field of view is, namely, wavy:<br>
+                <br>
+                <img src="waveypersp.jpg" style="height: 20em;"><br>
+                <br>
+                Far-away objects would still mostly be smaller, but the difference <i>is</i> apparent, especially as one starts to move around in the virtual space.<br>
+                The field of view widens exponentially in Exponential perspective:<br>
+                <br>
+                <img src="exppersp.jpg" style="height: 20em;"><br>
+                <br>
+                This means that the affect of distance on the apparent size of an object is highly exaggerated,<br>
+                because the 'plane of view' widens rapidly as the object gets further and further away.<br>
+                Finally, we have the Inverted perspective, where far-away objects appear larger than objects that are close:<br>
+                <br>
+                <img src="invpersp.jpg" style="height: 20em;"><br>
+                <br>
+                This distorts the image in an almost unrecognisable way, because it is essentially the direct opposite of what we are used to.<br>
+                <br>
+                The virtual space here has three layers of 'planes' made up of points, two above the observer and one below.<br>
+                The map at the top-left corner shows you where you are in relation to the grids and in which direction you are facing.<br>
+                The 'reddest' edge of the rectangle shown on the map corresponds to the edge of the grids where the points are 'reddest' in hue.<br>
+                Comparing what you see and what is shown on this map may help in visualising what is happening in each of the four perspectives.
+            </div>
+            
+            <a href="#" id="exitinfo">&times;</a>
+        </div>
+    </body>
+</html>
